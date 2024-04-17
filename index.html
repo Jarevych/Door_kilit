@@ -12,17 +12,26 @@
     <title>Hisar kilit</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container">
         <div class="header_menu">
           <nav class="nav">
-            <img src="./logo_hisar.jpg" alt="logo" width="60px" />
+            <img src="./logo_hisar.jpg" alt="logo" width="60px" class="logo"/>
             <ul class="menu">
-              <li class="list_item"><p>Головна</p></li>
-              <li class="list_item"><p>Каталог</p></li>
-              <li class="list_item"><p>Оптовий продаж</p></li>
-              <li class="list_item"><p>Про нас</p></li>
+              <li class="list_item">
+                <p>Головна</p>
+              </li>
+              <li class="list_item">
+                <p>Каталог</p>
+              </li>
+              <li class="list_item">
+                <p>Оптовий продаж</p>
+              </li>
+              <li class="list_item">
+                <p>Про нас</p>
+              </li>
             </ul>
           </nav>
           <ul class="for_user">
@@ -40,7 +49,7 @@
       </div>
     </header>
     <section class="hero">
-      <div class="container">
+      <div class="container hero_cont">
         <div class="hero_bg">
           <div class="hero_desc">
             <h2 class="section_title">Golden Soft GS-200Z-5 для офиса</h2>
@@ -50,7 +59,7 @@
               установки на деревянную/межкомнатную дверь.
             </p>
             <p class="hero_info">Цена</p>
-            <p class="price">33 000₽</p>
+            <p class="price">3 300 грн</p>
             <button type="button" class="hero_btn">Замовити</button>
           </div>
         </div>
@@ -59,22 +68,22 @@
     <section class="sale_stat">
       <div class="container">
         <ul class="sale_stat_list">
-            <li class="sale_stat_item">
-                <p class="sale_num">5,567</p>
-                <p class="sale_desc">Щасливих клієнтів</p>
-            </li>
-            <li class="sale_stat_item">
-                <p class="sale_num">1245</p>
-                <p class="sale_desc">Найменовань товарів</p>
-            </li>
-            <li class="sale_stat_item">
-                <p class="sale_num">372</p>
-                <p class="sale_desc">Продаж у день</p>
-            </li>
-            <li class="sale_stat_item">
-                <p class="sale_num">20</p>
-                <p class="sale_desc">Років на ринку</p>
-            </li>
+          <li class="sale_stat_item">
+            <p class="sale_num">5,567</p>
+            <p class="sale_desc">Щасливих клієнтів</p>
+          </li>
+          <li class="sale_stat_item">
+            <p class="sale_num">1245</p>
+            <p class="sale_desc">Найменовань товарів</p>
+          </li>
+          <li class="sale_stat_item">
+            <p class="sale_num">372</p>
+            <p class="sale_desc">Продаж у день</p>
+          </li>
+          <li class="sale_stat_item">
+            <p class="sale_num">20</p>
+            <p class="sale_desc">Років на ринку</p>
+          </li>
         </ul>
       </div>
     </section>
@@ -82,56 +91,150 @@
       <div class="container">
         <h2 class="section_title">Чому Hisar Kilit</h2>
         <ul class="advantages_list">
-            <li class="advantages_item">
-                <img src="./why1.jpg" alt="advantage">
-                <p>Возврат удвоенной стоимости каждого замка в случае брака. </p>
-               
-            </li>
-            <li class="advantages_item">
-                <img src="./why2.jpg" alt="advantage">
-                <p>Наносим ваш логотип компании на наш продукт</p>
-            </li>
-            <li class="advantages_item">
-                <img src="./why1.jpg" alt="advantage">
-                <p>Наносим ваш логотип компании на наш продукт</p>
-            </li>
+          <li class="advantages_item">
+            <img src="./why1.jpg" alt="advantage" />
+            <p>Возврат удвоенной стоимости каждого замка в случае брака.</p>
+          </li>
+          <li class="advantages_item">
+            <img src="./why2.jpg" alt="advantage" />
+            <p>Наносим ваш логотип компании на наш продукт</p>
+          </li>
+          <li class="advantages_item">
+            <img src="./why1.jpg" alt="advantage" />
+            <p>Наносим ваш логотип компании на наш продукт</p>
+          </li>
         </ul>
       </div>
     </section>
     <section class="categories">
       <div class="container">
+        <h2 class="section_title">Категорії</h2>
         <ul class="categories_list">
-            <li class="categories_item">
-                <img src="./categories/hotel.jpg" alt="for hotel">
-                <p class="cat_name">Для готелей</p>
-                <a href="" class="cat_btn">Перейти</a>
-            </li>
-            <li class="categories_item">
-                <img src="./categories/shelf.jpg" alt="for shelf">
-                <p class="cat_name">Для шафок</p>
-                <a href="" class="cat_btn">Перейти</a>
-            </li>
-            <li class="categories_item">
-                <img src="./categories/office.jpg" alt="for office">
-                <p class="cat_name">Для офісу</p>
-                <a href="" class="cat_btn">Перейти</a>
-            </li>
-            <li class="categories_item">
-                <img src="./categories/home.jpg" alt="for home">
-                <p class="cat_name">Для дому</p>
-                <a href="" class="cat_btn">Перейти</a>
-            </li>
+          <li class="categories_item">
+            <img src="./categories/hotel.jpg" alt="for hotel" />
+            <p class="cat_name">Для готелей</p>
+            <a href="" class="cat_btn">Перейти</a>
+          </li>
+          <li class="categories_item">
+            <img src="./categories/shelf.jpg" alt="for shelf" />
+            <p class="cat_name">Для шафок</p>
+            <a href="" class="cat_btn">Перейти</a>
+          </li>
+          <li class="categories_item">
+            <img src="./categories/office.jpg" alt="for office" />
+            <p class="cat_name">Для офісу</p>
+            <a href="" class="cat_btn">Перейти</a>
+          </li>
+          <li class="categories_item">
+            <img src="./categories/home.jpg" alt="for home" />
+            <p class="cat_name">Для дому</p>
+            <a href="" class="cat_btn">Перейти</a>
+          </li>
         </ul>
       </div>
     </section>
     <section class="popular">
-      <div class="container"></div>
+      <div class="container">
+        <h2 class="section_title">Популярні товари</h2>
+        <ul class="pop_list">
+          <li class="pop_item">
+            <a href="">
+              <img src="./popular/pop1.jpg" alt="" />
+              <p class="pop-available">В наявності</p>
+              <p class="pop-present">Подарунок</p>
+              <p class="pop-desc">Дверной Замок Golden Soft для отеля</p>
+              <p class="price">3 500</p>
+            </a>
+          </li>
+          <li class="pop_item">
+            <a href="">
+              <img src="./popular/pop2.jpg" alt="" />
+              <p class="pop-available">В наявності</p>
+              <p class="pop-present">Подарунок</p>
+              <p class="pop-desc">Вариативный замок Golden Soft для отеля</p>
+              <p class="price">5 600</p>
+            </a>
+          </li>
+
+          <li class="pop_item">
+            <a href="">
+              <img src="./popular/pop3.jpg" alt="" />
+              <p class="pop-available">В наявності</p>
+              <p class="pop-present">Подарунок</p>
+              <p class="pop-desc">Дверной Замок Golden Soft для офиса</p>
+              <p class="price">4 800</p>
+            </a>
+          </li>
+          <li class="pop_item">
+            <a href="">
+              <img src="./popular/pop4.jpg" alt="" />
+              <p class="pop-available">В наявності</p>
+              <p class="pop-present">Подарунок</p>
+              <p class="pop-desc">Дверной Замок Golden Soft для офиса</p>
+              <p class="price">4 300</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="contact_us">
-      <div class="container"></div>
+      <div class="container contact_cont">
+        <h2 class="section_title">Ми Вам передзвонимо</h2>
+        <p class="contact-desc">
+          Если у вас возникли какие-то вопросы или проблемы, заполните форму и
+          мы Вам перезвоним.
+        </p>
+        <form action="" class="contact_form">
+          <label for="name"></label>
+          <input type="text" id="name" name="name" class="contact_input" />
+          <label for="email"></label>
+          <input type="email" id="email" name="email" class="contact_input" />
+          <input type="submit" value="Відправити" class="contact_btn" />
+        </form>
+      </div>
     </section>
     <section class="footer">
-      <div class="container"></div>
+      <div class="container footer_cont">
+        <div class="ft_items">
+        <img src="./logo_hisar.png" alt="logo" class="ft_logo">
+        <ul class="ft_menu">
+            <li class="ft_list_item">
+                <p>Навігація</p>
+              </li>
+            <li class="ft_list_item">
+              <p>Головна</p>
+            </li>
+            <li class="ft_list_item">
+              <p>Каталог</p>
+            </li>
+            <li class="ft_list_item">
+              <p>Оптовий продаж</p>
+            </li>
+            <li class="ft_list_item">
+              <p>Про нас</p>
+            </li>
+          </ul>
+        <ul>
+            <li class="ft_list_item">Контакти</li>
+            <li class="ft_list_item">Телефон</li>
+            <li class="ft_list_item">+38 093 800 80 08</li>
+            <li class="ft_list_item">E-mail</li>
+            <li class="ft_list_item">info@hisar.ua</li>
+        </ul>
+        <ul>
+            <li class="ft_list_item">Адреса</li>
+            <li class="ft_list_item">Україна</li>
+            <li class="ft_list_item">м. Львів</li>
+            <li class="ft_list_item">вул. Городоцька, 355</li>
+        </ul>
+        <ul>
+            <li class="ft_list_item">Інформація</li>
+            <li class="ft_list_item">Оплата і доставка</li>
+            <li class="ft_list_item">Гарантія</li>
+            <li class="ft_list_item">Повернення товару</li>
+        </ul>
+    </div>
+      </div>
     </section>
   </body>
 </html>

@@ -2,38 +2,66 @@ body {
   font-family: sans-serif;
 }
 a {
-    color: inherit; /* Задає колір тексту таким самим, як у батьківського елементу */
-    text-decoration: none; /* Вимикає підкреслення для посилань */
-    background-color: transparent; /* Прозорий фон */
-    cursor: pointer; /* Змінює курсор при наведенні на посилання */
-    display: inline-block; /* Встановлює inline-block для забезпечення можливості задавати висоту та ширину */
-    padding: 0; /* Знімає внутрішні відступи */
-    margin: 0; /* Знімає зовнішні відступи */
-    font-weight: inherit; /* Задає товщину шрифту таку ж, як у батьківського елементу */
-    font-style: inherit; /* Задає стиль шрифту такий самий, як у батьківського елементу */
-    font-size: inherit; /* Задає розмір шрифту такий самий, як у батьківського елементу */
-    line-height: inherit; /* Задає висоту рядка таку ж, як у батьківського елементу */
-    text-align: inherit; /* Задає вирівнювання тексту таке саме, як у батьківського елементу */
+  color: inherit; /* Задає колір тексту таким самим, як у батьківського елементу */
+  text-decoration: none; /* Вимикає підкреслення для посилань */
+  background-color: transparent; /* Прозорий фон */
+  cursor: pointer; /* Змінює курсор при наведенні на посилання */
+  display: inline-block; /* Встановлює inline-block для забезпечення можливості задавати висоту та ширину */
+  padding: 0; /* Знімає внутрішні відступи */
+  margin: 0; /* Знімає зовнішні відступи */
+  font-weight: inherit; /* Задає товщину шрифту таку ж, як у батьківського елементу */
+  font-style: inherit; /* Задає стиль шрифту такий самий, як у батьківського елементу */
+  font-size: inherit; /* Задає розмір шрифту такий самий, як у батьківського елементу */
+  line-height: inherit; /* Задає висоту рядка таку ж, як у батьківського елементу */
+  text-align: inherit; /* Задає вирівнювання тексту таке саме, як у батьківського елементу */
 }
-
+p {
+  margin: 0;
+}
 ul {
   margin: 0;
   padding: 0;
-  line-height: 0;
+  /* line-height: 0; */
 }
-
+section { 
+   
+}
 li {
   list-style: none;
   text-decoration: none;
 }
 
 .container {
-  margin: 0 auto;
-  width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  
+    @media (min-width: 380px) {
+      width: 380px;
+    }
+  
+    @media (min-width: 768px) {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  
+    @media (min-width: 1440px) {
+      width: 1440px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
 }
-
+.logo {
+    width: 80px;
+    height: 60px;
+}
 .header {
   display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+
 }
 .nav {
   display: flex;
@@ -41,6 +69,8 @@ li {
 .header_menu {
   display: flex;
   justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .list_item {
   padding: 20px 0 20px 0;
@@ -53,6 +83,15 @@ li {
 .for_user {
   display: flex;
   gap: 40px;
+}
+
+/* Hero */
+.hero_cont{
+padding: 0;
+}
+.hero {
+    padding: 0;
+    /* width: 1440px; */
 }
 .hero_bg {
   width: 100%;
@@ -68,6 +107,7 @@ li {
 .section_title {
   font-size: 44px;
   font-weight: 600;
+  text-align: center;
 }
 .price {
   font-size: 24px;
@@ -101,6 +141,9 @@ li {
   justify-content: center;
   background: rgba(242, 248, 255, 1);
   gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
 }
 .sale_stat_item {
   display: flex;
@@ -156,6 +199,10 @@ li {
 }
 .cat_name {
   position: absolute;
+  left: 40px;
+  bottom: 106px;
+  font-size: 22px;
+  font-weight: 500;
 }
 .cat_btn {
   position: absolute;
@@ -164,10 +211,106 @@ li {
   align-items: center;
   /* width: 220px;
   height: 50px; */
-  top: 50px;
+  left: 40px;
+  bottom: 40px;
   border: 1px solid grey;
   border-radius: 2px;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 500;
+}
+
+/* Popular */
+
+.pop_list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.pop_item {
+  display: flex;
+  position: relative;
+  width: 288px;
+  height: 426px;
+}
+.pop-available {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.pop-present {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+/* Contact us */
+.contact_cont {
+  background-color: rgba(242, 248, 255, 1);
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
+.contact-desc {
+  font-size: 16px;
+  font-weight: 500;
+  width: 518px;
+  margin: 24px auto;
+  text-align: center;
+}
+.contact_form {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.contact_input {
+  width: 235px;
+  height: 45px;
+  background-color: rgba(22, 28, 36, 0.04);
+  border: 0;
+}
+.contact_form label {
+  display: none;
+}
+.contact_btn {
+  width: 240px;
+  height: 50px;
+  background: rgba(66, 149, 228, 1);
+  border: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+}
+
+/* Footer */
+.ft_logo {
+    width: 120px;
+    height: 75px;
+}
+.footer_cont {
+    background: rgba(13, 36, 54, 1);
+
+}
+.ft_items {
+    padding: 24px 0 16px 0;
+
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+.ft_menu {
+    display: flex;
+    flex-direction: column;
+}
+.ft_list_item {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 16px;
+}
+.ft_list_item:first-child {
+    font-weight: 600;
+    margin-bottom: 24px;
 }
