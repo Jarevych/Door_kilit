@@ -1,0 +1,173 @@
+body {
+  font-family: sans-serif;
+}
+a {
+    color: inherit; /* Задає колір тексту таким самим, як у батьківського елементу */
+    text-decoration: none; /* Вимикає підкреслення для посилань */
+    background-color: transparent; /* Прозорий фон */
+    cursor: pointer; /* Змінює курсор при наведенні на посилання */
+    display: inline-block; /* Встановлює inline-block для забезпечення можливості задавати висоту та ширину */
+    padding: 0; /* Знімає внутрішні відступи */
+    margin: 0; /* Знімає зовнішні відступи */
+    font-weight: inherit; /* Задає товщину шрифту таку ж, як у батьківського елементу */
+    font-style: inherit; /* Задає стиль шрифту такий самий, як у батьківського елементу */
+    font-size: inherit; /* Задає розмір шрифту такий самий, як у батьківського елементу */
+    line-height: inherit; /* Задає висоту рядка таку ж, як у батьківського елементу */
+    text-align: inherit; /* Задає вирівнювання тексту таке саме, як у батьківського елементу */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.header {
+  display: flex;
+}
+.nav {
+  display: flex;
+}
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+}
+.list_item {
+  padding: 20px 0 20px 0;
+}
+.menu {
+  margin-left: 100px;
+  display: flex;
+  gap: 40px;
+}
+.for_user {
+  display: flex;
+  gap: 40px;
+}
+.hero_bg {
+  width: 100%;
+  height: 760px;
+  background-image: url("./Rectangle 6.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 171px;
+}
+.hero_desc {
+  margin: 0 0 0 50%;
+}
+.section_title {
+  font-size: 44px;
+  font-weight: 600;
+}
+.price {
+  font-size: 24px;
+  font-weight: 600;
+}
+.hero_info {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hero_btn {
+  width: 220px;
+  height: 50px;
+  top: 71px;
+  gap: 0px;
+  opacity: 0px;
+  background: rgba(66, 149, 228, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  border: 0;
+}
+/* Sale Stat */
+.sale_stat {
+  align-items: center;
+}
+.sale_stat_list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  background: rgba(242, 248, 255, 1);
+  gap: 40px;
+}
+.sale_stat_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sale_num {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+}
+.sale_desc {
+  font-size: 18px;
+}
+
+/* advantages */
+
+.advantages_list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0px;
+  align-items: baseline;
+}
+.advantages_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 393px;
+  height: 226px;
+  padding: 24px 0px 0px 0px;
+  gap: 20px;
+}
+.advantages_item p {
+  font-size: 20px;
+
+  line-height: 1.2;
+}
+
+/* Catregories */
+
+.categories_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.categories_item {
+  display: flex;
+  width: 600px;
+  height: 470px;
+  position: relative;
+}
+.cat_name {
+  position: absolute;
+}
+.cat_btn {
+  position: absolute;
+  display: flex;
+  padding: 12px 78px;
+  align-items: center;
+  /* width: 220px;
+  height: 50px; */
+  top: 50px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+}
