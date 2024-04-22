@@ -21,16 +21,28 @@
             <img src="./logo_hisar.jpg" alt="logo" width="60px" class="logo"/>
             <ul class="menu">
               <li class="list_item">
-                <p>Головна</p>
+                <a id="mainBtn" href="#">
+
+                  <p>Головна</p>
+                </a>
               </li>
               <li class="list_item">
-                <p>Каталог</p>
+                <a href="#" id="listBtn">
+                  <p>Каталог</p>
+
+                </a>
               </li>
               <li class="list_item">
-                <p>Оптовий продаж</p>
+                <a href="#" id="salesBtn">
+                  <p>Оптовий продаж</p>
+
+                </a>
               </li>
               <li class="list_item">
-                <p>Про нас</p>
+                <a href="#" id="aboutBtn">
+                  <p>Про нас</p>
+
+                </a>
               </li>
             </ul>
           </nav>
@@ -236,5 +248,28 @@
     </div>
       </div>
     </section>
+    <div class="backdrop container">
+      <div class="modal">
+        <div class="modal-list">
+          <ul class="category-list">
+            <li data-image="./categories/kilit1.jpg" class="modal-category-item">Накладные электронные замки</li>
+            <li data-image="./categories/kilit2.jpg" class="modal-category-item">Врезные электронные замки</li>
+            <li data-image="./categories/kilit3.jpg" class="modal-category-item">Замки для квартиры</li>
+            <li data-image="./categories/kilit4.jpg" class="modal-category-item">Замки для дома</li>
+            <li data-image="./categories/kilit5.jpg" class="modal-category-item">Замки для отелей</li>
+            <li data-image="./categories/kilit6.jpg" class="modal-category-item">Замки для офиса</li>
+            <li data-image="./categories/kilit7.jpg" class="modal-category-item">Замки для шкафчиков</li>
+            <li data-image="./categories/kilit8.jpg" class="modal-category-item">Замки для раздевалок</li>
+          </ul>
+          <button type="button" class="load-btn">Показати більше</button>
+        </div>
+        <div class="category-image">
+          <img id="listImage" alt="category image" src="">
+        </div>
+      </div>
+
+    </div>
   </body>
+  <script src="main.js"></script>
+  <script src="modal-list.js"></script>
 </html>
